@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Models\Post;
+use Illuminate\Routing\Route;
+
 class AdminPostsController extends Controller
 {
     public function index()
@@ -22,4 +24,5 @@ class AdminPostsController extends Controller
 
         return view('admin.posts.edit', $data);
     }
+
 }
